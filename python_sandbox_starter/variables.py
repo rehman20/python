@@ -13,3 +13,15 @@ VARIABLE RULES:
   - Must start with a letter or an underscore
   - Can have numbers but can not start with one
 """
+x=10
+name='Rehman Aziz'
+height=164.5
+isMarried=False
+
+print(x,name,height,isMarried)
+
+# Multiple Assignments
+
+y,name2,height2,isMarried2 = (20,'Sunny',164.75,True)
+print(y,name2,height2,isMarried2)
+
