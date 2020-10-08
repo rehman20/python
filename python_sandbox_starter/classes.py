@@ -6,13 +6,12 @@ class Cars:
         self.carName=make
         self.carModelYear=modelYear
 
-    def showSpecs(self):
+    def showGSpecs(self):
         print(f'Car\'s make is {self.carName} and Car\'s Year is {self.carModelYear}')
 
 class bmw(Cars):
     def __init__(self,make,year,speed):
-        self.carName=make
-        self.carModelYear=year
+        super().__init__(make,year)
         self.speed=speed
     
     def showSpecs(self):
@@ -20,8 +19,10 @@ class bmw(Cars):
 
 c1=Cars('Toyota',2016)
 
-c1.showSpecs()
+#c1.showSpecs()
 
 c2= bmw('BMW Sports',2018,280)
 
 c2.showSpecs()
+
+c2.showGSpecs()
